@@ -1,7 +1,7 @@
 from socket import *
 from time import sleep
 
-Nome_Servidor = '10.0.99.150' 
+Nome_Servidor = 'localhost' 
 Porta_Servidor = 1221
 Socket_Cliente = socket(AF_INET, SOCK_DGRAM)
 Socket_Cliente.settimeout(5)
