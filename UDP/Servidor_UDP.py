@@ -4,7 +4,8 @@ Porta_Servidor = 1221
 Socket_Servidor = socket(AF_INET, SOCK_DGRAM)
 Socket_Servidor.bind(('', Porta_Servidor))
 
-print('Servidor Aguardando Mensagem . . .\n')
+print('Servidor Aguardando Mensagem . . .')
+print('Histórico\n')
 
 while True:
     Mensagem, Endereco_Cliente = Socket_Servidor.recvfrom(2048)
