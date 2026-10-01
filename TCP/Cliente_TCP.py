@@ -8,15 +8,15 @@ Socket_Cliente.connect((Nome_Servidor,Porta_Servidor))
 
 
 
-Mensagem = input('Digite um número inteiro: ')
+Mensagem = input('\nDigite um número inteiro: ')
 
 
 Socket_Cliente.send(Mensagem.encode())
 Mensagem_Resposta = Socket_Cliente.recv(2048)
 
-print(Mensagem_Resposta.decode())
+print(f'{Mensagem_Resposta.decode()}\n')
 
-print('Finalizando . . .')
+print('Finalizando . . .\n')
 sleep(1)
 
 
