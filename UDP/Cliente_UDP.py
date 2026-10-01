@@ -1,7 +1,7 @@
 from socket import *
 from time import sleep
 
-Nome_Servidor = 'localhost' 
+Nome_Servidor = '10.0.99.150' 
 Porta_Servidor = 1221
 Socket_Cliente = socket(AF_INET, SOCK_DGRAM)
 Socket_Cliente.settimeout(5)
@@ -18,15 +18,15 @@ while True:
         print('Pacote perdido ou servidor fora do ar.')
 
 
-    continuar = input('Deseja enviar outra mensagem? [S/N] ').upper().strip()
+    continuar = input('\nDeseja enviar outra mensagem? [S/N] ').upper().strip()
     while continuar not in ('S','N'):
         continuar = input('Deseja enviar outra mensagem? [S/N] ').upper().strip()
 
     if continuar == 'S':
-        print('Reiniciando . . .')
+        print('Reiniciando . . .\n')
         sleep(1)
     else:
-        print('Finalizando . . .')
+        print('Finalizando . . .\n')
         sleep(1)
         break
 
