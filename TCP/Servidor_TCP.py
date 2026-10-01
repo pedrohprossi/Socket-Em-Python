@@ -24,8 +24,8 @@ Socket_Servidor.bind(('', Porta_Servidor))
 Socket_Servidor.listen(1)
 
 print('Servidor conectado . . . ')
-print('Histórico')
-print('')
+print('Histórico\n')
+
 while True:
     Socket_Conexao , Endereco = Socket_Servidor.accept()
 
@@ -37,8 +37,7 @@ while True:
         Mensagem_Resposta = 'Mande um número inteiro'
 
     print(f'''Cliente: {Mensagem}
-Servidor: {Mensagem_Resposta}
-''')
+Servidor: {Mensagem_Resposta}\n''')
 
     Socket_Conexao.send(Mensagem_Resposta.encode())
     Socket_Conexao.close()
