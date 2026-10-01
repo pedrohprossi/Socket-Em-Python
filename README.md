@@ -2,7 +2,7 @@
 
 Trabalho de Redes de Computadores com duas aplicações cliente-servidor usando a biblioteca `socket`.
 
-**Pedro Henrinque Paschoalim Rossi:** 
+**Pedro Henrinque Paschoalim Rossi**                                                               
 **Cibersegurança | UFU**
 
 ## Arquivos
